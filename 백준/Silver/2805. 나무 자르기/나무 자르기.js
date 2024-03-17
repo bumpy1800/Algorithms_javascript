@@ -22,12 +22,14 @@ while(tail <= head){
     }
   })
   if(sum >= goalHeight){
-    if(mid > maxHeight){
+          if(mid > maxHeight){
       maxHeight = mid
     }
     tail = mid+1
   }else if(sum < goalHeight){
     head = mid-1
+  }else{
+
   }
 }
 
