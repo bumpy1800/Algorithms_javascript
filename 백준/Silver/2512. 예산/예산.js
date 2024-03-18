@@ -5,7 +5,7 @@ const input = require("fs")
   .split("\n")
   .map((el) => el.split(" ").map(Number));
 
-const [[N], [...REGION_ARRAY], [MAX_BUDGET]] = input
+const [[N], REGION_ARRAY, [MAX_BUDGET]] = input
 
 if(REGION_ARRAY.reduce((acc,el)=>acc+el,0) <= MAX_BUDGET){
   console.log(Math.max(...REGION_ARRAY))
